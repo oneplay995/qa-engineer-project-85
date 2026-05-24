@@ -1,5 +1,3 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/oneplay995/qa-engineer-project-85/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/oneplay995/qa-engineer-project-85/actions)
 Codebattle — онлайн‑платформа для проведения соревнований по программированию в режиме реального времени. Система позволяет пользователям:
 
 1. Создавать и присоединяться к играм против других игроков, ботов или приглашённых участников (по ссылке);
