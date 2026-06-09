@@ -197,3 +197,58 @@
     - Подтвердить действие "Сдаться"
   expected-result: |
     Успешное завершение игры
+
+- summary: |
+    Создание игры пользователем 
+  requirement: |
+    Пользователь должен иметь возможность создать игру с другом
+  prerequisites: |
+    Открыта главная страница
+  test-data: |
+    Empty
+  steps:
+    - Нажать на кнопку "Создать битву"
+    - Выбрать Level 2
+    - Выбрать Game type "With a friend"
+    - Выбрать Time conrol "3 min"
+    - Выбрать Choose opponent "oneplay"
+    - Выбрать Choose task by name or tags "store"
+    - Нажать на кнопку "Create invite"
+  expected-result: |
+    Успешное создание игры c другом
+
+- summary: |
+    Создание игры пользователем 
+  requirement: |
+    Пользователь должен иметь возможность создать игру с другим пользователем
+  prerequisites: |
+    Открыта главная страница
+  test-data: |
+    Empty
+  steps:
+    - Нажать на кнопку "Создать битву"
+    - Выбрать Level 3
+    - Выбрать Game type "With other user"
+    - Выбрать Time conrol "2 min"
+    - Выбрать Choose task by name or tags "remove_comments"
+    - Нажать на кнопку "Create battle"
+  expected-result: |
+    Успешное создание игры c другим пользователем
+
+- summary: |
+    Режим ожидания второго игрока
+  requirement: |
+    Успешное ожидание второго игрока
+  prerequisites: |
+    Создание игры
+  test-data: |
+    Empty
+  steps:
+    - Нажать на кнопку "Создать битву"
+    - Выбрать Level 3
+    - Выбрать Game type "With other user"
+    - Выбрать Time conrol "2 min"
+    - Выбрать Choose task by name or tags "remove_comments"
+    - Нажать на кнопку "Create battle"
+  expected-result: |
+    Успешное ожидание второго игрока
